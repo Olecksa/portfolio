@@ -1,13 +1,106 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Sofia&display=swap");
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
 }
+
+.navbar h1 {
+  color: #8f6ce2;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #8f6ce2;
+}
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card-container {
+  width:300px;
+  overflow: hidden;
+  box-shadow:0px 0px 15px -5px;
+  transition: 0,3s;
+  animation: ease-in;
+  border-radius: 20px;
+
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+  box-shadow:0px 0px 15px 0px;
+
+}
+
+.image-container img { 
+overflow: hidden;
+width: 300px;
+height: 400px;
+
+}
+
+.card-content {
+  margin: 1rem;
+  margin-top: 0.3rem;
+}
+
+h3,p {
+  margin: 0;
+  padding: 0;
+
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  padding: 0.5rem;
+  background-color: none;
+  transition: 0.2s;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+
+}
+
+.btn button:hover {
+    background: rgba(130, 18, 205, 0.1);
+    transform: scale(1.1);
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #20ad41;
+    text-decoration: none;
+    font-weight: bold;
+
+  }
